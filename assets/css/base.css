@@ -1,0 +1,39 @@
+:root {
+    /* Danh sách biến toàn cục */
+    --while-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+}
+
+/* ÁP dụng cho toàn file html được nhúng cái file css này vào */
+* {
+    /* inherit Kế thừa thuộc tính box-sizing từ phần tử cha */
+    box-sizing: inherit;
+}
+
+html {
+    /* trình duyệt sẽ mặt định 100% là 16px 62.5% là 10px*/
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+
+.grid {
+    width: 1200px;
+    /* Nếu màn ngang nhỏ hơn 1200px thì dãn full màn */
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* cho full chiều ngang */
+.grid__full--width {
+    width: 100%;
+}
+
+/* Cho các phần tử nằm cùng hàng và có thể xuống dòng */
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
