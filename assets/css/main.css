@@ -139,6 +139,7 @@
     border-radius: 2px;
     transform-origin: calc(100% - 36px) top;
     animation: headerNotifyGrowth ease-in .15s;
+    will-change: opacity, transform;
     display: none;
 }
 
