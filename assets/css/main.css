@@ -358,19 +358,19 @@
 }
 
 .auth-form__aside {
-
+    margin-top: 18px;
 }
 
 .auth-form__policy-text {
-
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.4rem;
+    padding: 0 12px;
 }
 
-.auth-form__policy-link {
-
-}
-
-.auth-form__policy-link {
-
+.auth-form__policy-text-link {
+    color: var(--primary-color);
+    text-decoration: none;
 }
 
 .auth-form__control {
@@ -379,4 +379,20 @@
 
 .auth-form__socials {
 
+}
+
+.btn {
+    min-width: 142px;
+    height: 36px;
+    border: none;
+    /* Đề phòng khi thẻ a sử dụng class này */
+    text-decoration: none; 
+    border-radius: 2px;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.btn.btn--primary {
+    background-color: var(--primary-color);
+    color: var(--while-color);
 }
