@@ -282,7 +282,7 @@
 
 .modal__body {
     position: relative;
-    background-color: var(--while-color);
+    /* background-color: var(--while-color); */
     margin: auto;
     border-radius: 5px;
     /* z-index: 10; */
@@ -291,7 +291,10 @@
 /* Authen Modal */
 .auth-form {
     /* border-radius: 5px; */
+    background-color: var(--while-color);
+    border-radius: 5px;
     width: 500px;
+    overflow: hidden;
 }
 
 .auth-form__container {
@@ -373,14 +376,6 @@
     text-decoration: none;
 }
 
-.auth-form__control {
-
-}
-
-.auth-form__socials {
-
-}
-
 .btn {
     min-width: 142px;
     height: 36px;
@@ -390,9 +385,64 @@
     border-radius: 2px;
     font-size: 1.4rem;
     cursor: pointer;
+    color: var(--text-color);
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px; /* để cách icon và chữ một chút, tuỳ chỉnh */
 }
+
 
 .btn.btn--primary {
     background-color: var(--primary-color);
     color: var(--while-color);
+}
+
+.btn.btn--disable {
+    cursor: default;
+    background-color: #ccc;
+}
+
+.auth-form__controls {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 80px;
+}
+
+.auth-form__controls-back {
+    margin-right: 8px;
+}
+
+.auth-form__socials {
+    background-color: #f5f5f5;
+    padding: 16px 36px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.btn--size-s {
+    height: 30px;
+}
+
+.auth-form__socials-icon {
+    font-size: 2rem;
+}
+
+.auth-form__socials--facebook{
+    color: var(--while-color);
+    background-color: #3A5A98;
+}
+
+.auth-form__socials--facebook
+.auth-form__socials-icon {
+    color: var(--while-color);
+}
+
+.auth-form__socials--google {
+    background-color: var(--while-color);
+    color: #666;
 }
