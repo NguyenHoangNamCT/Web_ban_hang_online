@@ -306,6 +306,7 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 16px;
+    padding: 0 12px;
 }
 
 .auth-form__heading {
@@ -388,11 +389,12 @@
     color: var(--text-color);
     background-color: rgba(0, 0, 0, 0);
     padding: 0 12px;
+    line-height: 1.4rem;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px; /* để cách icon và chữ một chút, tuỳ chỉnh */
+    gap: 20px; /* để cách icon và chữ một chút, tuỳ chỉnh */
 }
 
 
@@ -445,4 +447,27 @@
 .auth-form__socials--google {
     background-color: var(--while-color);
     color: #666;
+}
+
+.auth-form__help {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.auth-form__help-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #939393;
+}
+
+.auth-form__help--sparate{
+    display: block;
+    border-left: 1px solid #EAEAEA;
+    margin: 0 12px;
+    height: 2.4rem;
+}
+
+.auth-form__help-link-forgot {
+    color: var(--primary-color);
 }
