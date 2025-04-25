@@ -5,6 +5,9 @@
     --black-color: #000;
     --text-color: #333;
     --border-color: #dbdbdb;
+    --header-height: 120px;
+    --navbar-height: 40px;
+    --haeder-with-search-height: calc(var( --header-height) - var(--navbar-height));
 }
 
 /* ÁP dụng cho toàn file html được nhúng cái file css này vào */

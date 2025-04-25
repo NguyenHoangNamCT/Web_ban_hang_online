@@ -1,5 +1,5 @@
 .header {
-    height: 120px;
+    height: var(--header-height);
     background-image: linear-gradient(0, #fe6433, #f53e2d);
 }
 
@@ -493,4 +493,39 @@
 
 .auth-form__help-link-forgot {
     color: var(--primary-color);
+}
+
+/* Header with search */
+
+.header-with-search {
+    height: var(--haeder-with-search-height);
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    width: 200px;
+}
+
+.header__logo-img {
+    width: 130px;
+}
+
+.header__search {
+    background-color: var(--while-color);
+    flex: 1;
+    height: 40px;
+    border: 2px;
+}
+
+.header_cart {
+    width: 150px;
+    display: flex;
+}
+
+.header_cart__icon {
+    margin: auto;
+    /* background-color: var(--while-color); */
+    color: var(--while-color);
+    font-size: 2.2rem;
 }
