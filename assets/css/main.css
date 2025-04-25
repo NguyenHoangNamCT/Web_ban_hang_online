@@ -178,6 +178,24 @@
     }
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes growth {
+    from {
+        transform: scale(var(--growth-from));
+    }
+    to {
+        transform: scale(var(--growth-to));
+    }
+}
+
 .header__navbar-item--has-notify:hover .header__notify  {
     display: block;
 }
@@ -270,6 +288,7 @@
     left: 0;
     right: 0;
     display: flex;
+    animation: fadeIn linear 0.2s;
 }
 
 .modal__overlay {
@@ -281,11 +300,15 @@
 }
 
 .modal__body {
+    --growth-from: 0.7;
+    --frowth-to: 1;
     position: relative;
     /* background-color: var(--while-color); */
     margin: auto;
     border-radius: 5px;
     /* z-index: 10; */
+
+    animation: growth linear 0.2s;
 }
 
 /* Authen Modal */
