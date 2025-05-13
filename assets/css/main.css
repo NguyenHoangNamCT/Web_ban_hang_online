@@ -34,6 +34,8 @@
     font-weight: 300;
 }
 
+
+
 .header__navbar-item:hover,
 .header__navbar-item-link:hover,
 .header__navbar-icon-link:hover {
@@ -46,7 +48,10 @@
 .header__navbar-icon-link {
     display: inline-flex;
     align-items: center;
+}
 
+.header__navbar-icon {
+    margin-left: 4px;
 }
 
 .header__navbar-item--bold {
@@ -60,7 +65,7 @@
     height: 12px;
     border-left: 1px solid #FB9086;
     top: 50%;
-    right: -8px;
+    right: -12px;
     transform: translateY(-50%);
 }
 
@@ -141,6 +146,7 @@
     animation: headerNotifyGrowth ease-in .15s;
     will-change: opacity, transform;
     display: none;
+    z-index: 1;
 }
 
 .header__notify::before {
@@ -396,7 +402,7 @@
 }
 
 .btn {
-    min-width: 142px;
+    min-width: 124px;
     height: 36px;
     border: none;
     /* Đề phòng khi thẻ a sử dụng class này */
@@ -597,7 +603,7 @@
 }
 
 .header_cart__wrap-cart-icon:hover .header_cart-list{
-    display: flex;
+    display: block;
 }
 
 .header_cart-list::before {
@@ -782,4 +788,98 @@
     color: var(--text-color);
     font-size: 1.4rem;
     display: block;
+}
+
+
+.header_cart-heading {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 8px 0 8px 12px;
+    color: #999;
+}
+
+.header_cart-list-item {
+    padding-left: 0;
+    list-style: none;
+}
+
+.header_cart-item {
+    display: flex;
+    align-items: center;
+}
+
+.header_cart-item:hover {
+    background-color: #f8f8f8;
+}
+
+.header_cart-item-img {
+    width: 50px;
+    height: 50px;
+    margin: 12px;
+    border: 2px solid #f5f5f5;
+    border-radius: 2px;
+}
+
+.header_cart-item-info {
+    width: 100%;
+    margin: 12px;
+}
+
+.header_cart-item-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 10px 0;
+}
+
+.header_cart-item-name {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.header_cart-item-wrap-price {
+    
+}
+
+.header_cart-item-price {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+
+.header_cart-item-multipl {
+    
+}
+
+.header_cart-item-qnt {
+    
+}
+
+.header_cart-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_cart-item-description {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.header_cart-item-remove {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.header_cart-item-remove:hover {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.header_cart-view-cart {
+    float: right;
+    margin: 0 12px 12px 0;
+}
+
+.header_cart-view-cart:hover {
+    background-color: #F05d41;
 }
